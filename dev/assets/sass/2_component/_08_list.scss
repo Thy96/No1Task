@@ -1,0 +1,82 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-listText{
+    padding: 20px;
+	ul{
+        list-style: none; 
+        counter-reset: li;
+        li{
+            counter-increment: li;
+            line-height: 2;
+            font-weight: 500;
+            &::before {
+                content: counter(li); color: red;
+                display: inline-block; width: 1em;
+                margin-left: -1em;
+            }
+            ul{
+                padding-left: 30px;
+                li{
+                    position: relative;
+                    padding-left: 15px;
+                    list-style: none;
+                    &::before{
+                        position: absolute;
+                        content: "3.1";
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
+.c-navi1{
+    ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        li {
+            width: 300px;
+            a{
+                text-decoration: none;
+                background: #00aeef;
+                color: #FFF;
+                line-height: 1;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                height: 43px;
+                border-radius: 5px;
+                font-size: 1.6rem;
+                &:before {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    border-right: 2px solid #FFF;
+                    border-bottom: 2px solid #FFF;
+                    margin-right: 7px;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    margin-top: -4px;
+                } 
+            }
+        }
+    }
+}

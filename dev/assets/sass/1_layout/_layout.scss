@@ -1,0 +1,57 @@
+/* layout
+------------------------------------------------------------*/
+body{
+	font-family: $mainFonts;
+	font-size: 1.4rem;
+	min-width: $baseWidth;
+	line-height: 1.5;
+	@include breakpoint(sp) {
+		min-width: 320px;
+	}
+}
+//-------------------------------------------------------
+main{
+	// padding: 0px 0 100px;
+}
+
+section{
+	padding: 50px 0 40px;
+}
+p{
+	line-height: 1.5;
+}
+//-------------------------------------------------------
+.l-container{
+	width: $baseWidth;
+	margin: 0 auto;
+}
+//-------------------------------------------------------
+.box2{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px 0;
+	&__feat{
+		width: 30%;
+		margin-right: 50px;
+		margin-bottom: 45px;
+		&:nth-of-type(3n - 3){
+			margin-right: 0;
+		}
+		h4{
+			margin: 10px 0;
+			span{
+				padding: 0 20px;
+				display: inline-block;
+			}
+		}
+		.text-1{
+			background: #a3d39c;
+		}
+		.text-2{
+			background: #ffdfdf;
+		}
+		.text-3{
+			background: #fff799;
+		}
+	}
+}

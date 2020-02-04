@@ -1,0 +1,78 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title{
+	font-size: 2.4rem;
+	font-weight: bold;
+    padding-left: 15px;
+    &--color1{
+        background: #fff9da;
+        border: 1px solid #ffd800;
+        border-left: 5px solid #ffd800;
+    }
+    
+    &--color2{
+        background: #fff2f2;
+        border: 1px solid #f68e56;
+        border-left: 5px solid #f68e56;
+    }
+    
+    &--color3{
+        background: #ebebeb;
+        border: 1px solid #6dcff6;
+        border-left: 5px solid #6dcff6;
+    }
+}
+
+.c-title2{
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.c-title3{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000;
+    border-left: 5px solid #000;
+    padding: 5px 0 5px 20px;
+}
+.c-title4{
+    font-size: 1.6rem;
+    position: relative;
+    padding-left: 25px;
+    font-weight: 500;
+    &::before{
+        position: absolute;
+        content: "";
+        background-size: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 21px;
+    }
+}
+
+.c-title-anchor{
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.c-dev-title1, .c-dev-title2{
+    line-height: 1;
+    font-size: 1.3rem;
+    padding: 10px 0 10px 15px;
+    margin: 40px 0 20px 0;
+    border-radius: 2px;
+}

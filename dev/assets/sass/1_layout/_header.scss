@@ -1,0 +1,41 @@
+/* Header
+------------------------------------------------------------*/
+.c-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    position: relative;
+    background: rgba(255,255,255,0.9);
+    .bder{
+        border-bottom: 1px solid #a8a8a8;
+        padding-bottom: 20px;
+    }
+}
+
+/* Logo
+------------------------------------------------------------*/
+.c-header__logo{
+    
+}
+
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav{
+    ul{
+
+    }
+    li{
+        display: inline-block;
+        +li{
+            margin-left: 20px;
+        }
+    }
+    a{
+        font-size: 1.6rem;
+        text-transform: capitalize;
+    }
+    a:focus{
+        color: red;
+    }
+}

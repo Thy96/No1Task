@@ -1,0 +1,75 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-link2{
+	.c-mainvisual {
+        padding: 0;
+        color: #000;
+    }
+
+
+    &--1{
+        .c-title3{
+            background: #bcd5e1;
+            border-left: 5px solid #11638a;
+            color: #11638a;
+        }
+        .c-title4{
+            margin-top: 50px;
+            color: #11638a;
+            &::before{
+                background-size: 100%;
+                background: url("../img/ic_ques_1.png") left center no-repeat;
+            }
+        }
+    }
+
+    &--2{
+        margin-bottom: 50px;
+        .c-title3{
+            background: #ffe8e9;
+            border-left: 5px solid #f5989d;
+            color: #f5989d;
+        }
+
+        .c-title4{
+            margin-top: 50px;
+            color: #f5989d;
+            &::before{
+                background-size: 100%;
+                background: url("../img/ic_seedling.png") left center no-repeat;
+            }
+            &--img1{
+                &::before{
+                    background: url("../img/ic_paint.png") left center no-repeat;
+                }
+            }
+            &--img2{
+                &::before{
+                    background: url("../img/ic_ques_2.png") left center no-repeat;
+                }
+            }
+        }
+
+        .c-table1{
+            thead{
+                th{
+                    background: #8CC152;
+                    color: #FFF;
+                    font-size: 1.4rem;
+                }
+            }
+            tbody {
+                th {
+                    font-weight: normal;
+                    font-size: 1.4rem;
+                    
+                }
+                td {
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

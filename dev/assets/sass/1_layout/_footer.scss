@@ -1,0 +1,68 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer{
+    padding: 20px 20px;
+    color: #000;
+    .box{
+        display: flex;
+        justify-content: space-between;
+        &__link{
+            width: 30%;
+            &:nth-of-type(2){
+                ul{
+                    li{
+                        &::before{
+                            background: url("../img/ic_ft_2.png") left center no-repeat;
+                            width: 5px;
+                            height: 7px;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                ul{
+                    li{
+                        padding-left: 20px;
+                        &::before{
+                            background: url("../img/ic_ft_3.png") left center no-repeat;
+                            width: 11px;
+                            height: 11px;
+                        }
+                    }
+                }
+            }
+            h3{
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+            }
+            ul{
+                li{
+                    position: relative;
+                    padding-left: 15px;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        background: url("../img/ic_ft_1.png") left center no-repeat;
+                        background-size: 100%;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 5px;
+                        height: 6px;
+                    }
+                }
+            }
+        }
+    }
+    .copy_r{
+        border-top: 1px solid #e3e3e3;
+        margin-top: 25px;
+        padding-top: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 500;
+    }
+}

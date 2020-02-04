@@ -1,0 +1,146 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.flex{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.p-top{
+	line-height: 2;
+	// margin: 20px 0 ;
+	// padding: 30px 0;
+	//-------------------------------------------------------
+	.c-mainvisual{
+		padding: 0;
+		color: #000;
+		
+		&__inner{
+			position: relative;
+			background: url(../img/banner.png) no-repeat center;
+			background-size: cover;
+			height: 360px;
+			.cate{
+				position: absolute;
+				content: "";
+				bottom: 35px;
+				left: 35px;
+			}
+		}
+		h2{
+			width: 12.8rem;
+			flex-basis: 100%;
+			font-size: 1.6rem;
+			font-weight: bold;
+			background: #ffdfdf;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		p{
+			width: 100%;
+			font-size: 2rem;
+		}
+	}
+	
+	//-------------------------------------------------------
+	&1{
+		.box{
+			margin: 25px 0;
+			&__cate{
+				display: flex;
+				justify-content: space-between;
+				padding: 15px 0;
+				.img{
+					width: 350px;
+					position: relative;
+					p{
+						position: absolute;
+						content: "";
+						top: 0;
+						left: 0;
+						width: 112px;
+						text-align: center;
+					}
+					.cate-1{
+						background: #fff799;
+					}
+					.cate-2{
+						background: #a3d39c;
+					}
+					.cate-3{
+						background: #ffdfdf;
+					}
+				}
+				.content{
+					width: 610px;
+					position: relative;
+					h3{
+						font-size: 1.6rem;
+					}
+					p{
+						line-height: 1.5;
+					}
+					.c-btn2{
+						padding: 10px;
+						width: 150px;
+						display: block;
+						margin: 0 0 0 auto;
+						position: absolute;
+						right: 0;
+						bottom: 0;
+					}
+				}
+			}
+			.c-btn3{
+				background: #ffd800;
+				margin: 25px auto 0 auto;
+				text-align: center;
+			}
+		}
+	}
+	//-------------------------------------------------------
+	&2{
+		.c-btn3{
+			background: #f68e56;
+			margin: 25px 0 0 auto;
+			text-align: center;
+		}
+	}
+	//-------------------------------------------------------
+	&3{
+		padding-bottom: 90px;
+		.box2{
+			&__blog{
+				width: 48%;
+				margin-right: 40px;
+				margin-bottom: 45px;
+				h4 {
+					margin: 10px 0;
+					span {
+						padding: 0 20px;
+						display: inline-block;
+					}
+				}
+				.text-1 {
+					background: #a3d39c;
+				}
+				.text-2 {
+					background: #ffdfdf;
+				}
+				figure{
+					img{
+						width: 100%;
+					}
+				}
+				&:nth-of-type(2n+2){
+					margin-right: 0;
+				}
+			}
+		}
+		.c-btn3{
+			width: auto;
+			background: #6dcff6;
+			text-align: center;
+		}
+	}
+}
